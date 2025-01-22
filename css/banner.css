@@ -1,4 +1,74 @@
 .banner {
-    background: url("/images/Banner_1.png");
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 340px 0 0 120px;
+    background: url("/images/Banner_1.png") no-repeat center / cover;
     height: calc(100vh - 90px);
+    justify-content: space-between;
+}
+
+.banner-text {
+    color: #2D3448;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.banner-title {
+    font-size: 52px;
+}
+
+.banner-title > span {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.banner-list {
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.banner-button {
+    display: flex;
+    padding: 15px 30px;
+    background-color: #00B8FF;
+    border: none;
+    gap: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.slider {
+    width: fit-content;
+    display: flex;
+    margin: 0 auto 24px;
+    gap: 19px;
+    align-items: center;
+}
+
+.slide {
+    padding: 7.5px;
+    background-color: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #00AEEF;
+}
+
+.slider-arrow {
+    display: flex;
+    position: absolute;
+    padding: 25px;
+    top: 419px;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
 }
