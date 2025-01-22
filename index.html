@@ -4,29 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/service.css">
     <title>Sotbit</title>
 </head>
 
 <body>
     <header class="header">
-        <nav class="nav">
+        <nav class="container nav">
             <div class="left-header-menu">
                 <img class="hamburger" src="images/burger_menu.svg" alt="Burger Menu">
                 <img src="images/logo.svg" alt="sotbit logo">
                 <div class="country-selector">
                     <p>Россия</p>
                     <img src="images/russia.svg" alt="russia">
-                    <img class="arrow" src="images/arrow_down.svg" alt="arrow_down">
+                    <img class="arrow" src="images/arrows/arrow_down.svg" alt="arrow_down">
                 </div>
             </div>
             <div class="right-header-menu">
                 <div class="contacts">
                     <div class="contacts-phone">
                         <p>+7 (495) 278-08-54</p>
-                        <img src="images/arrow_down.svg" alt="arrow_down">
+                        <img src="images/arrows/arrow_down.svg" alt="arrow_down">
                     </div>
                     <p>Заказать обратный звонок</p>
                 </div>
@@ -53,7 +58,7 @@
             </div>
             <button class="banner-button">
                 <p>Подробнее</p>
-                <img src="images/arrow_right-top.png" alt="Arrow Right Top">
+                <img src="images/arrows/arrow_right-top.png" alt="Arrow Right Top">
             </button>
         </div>
         <div class="slider">
@@ -63,10 +68,64 @@
             <div class="slide"></div>
         </div>
         <div class="slider-arrow">
-            <img src="images/arrow_left_grey.svg" alt="Arrow Left">
-            <img src="images/arrow_right_grey.svg" alt="Arrow Right">
+            <img src="images/arrows/arrow_left_grey.svg" alt="Arrow Left">
+            <img src="images/arrows/arrow_right_grey.svg" alt="Arrow Right">
         </div>
     </div>
+
+    <section class="container service_container">
+        <h2 class="service-title">Наши услуги</h2>
+        <div class="card-container">
+
+            <div class="card">
+                <img class="card-icon" src="images/service_icons/personal_accounts.svg" alt="Design">
+                <h3 class="card-title">Внедрение личных кабинетов</h3>
+                <p class="card-text">Разработка и внедрение B2B порталов для оптимизации взаимодействия с контрагентами и увеличения прибыли. При интеграции с системами 1С и CRM Битрикс 24 магазин требует меньше трудозатрат на сопровождение заказа.</p>
+            </div>
+            <div class="card">
+                <img class="card-icon" src="images/service_icons/marketplace_development.svg" alt="Design">
+                <h3 class="card-title">Разработка маркетплейсов</h3>
+                <p class="card-text">Разработка и внедрение личного кабинета поставщика на Битрикс для организации единой торговой онлайн-площадки. Получите готовую платформу с передовым функционалом в короткие сроки и за разумные деньги.</p>
+            </div>
+            <div class="card">
+                <img class="card-icon" src="images/service_icons/eShop_creation.svg" alt="Design">
+                <h3 class="card-title">Создание интернет-магазинов</h3>
+                <p class="card-text">Разработка, внедрение типовых и уникальных интернет-магазинов на Битрикс. Готовые решения сайтов созданы для продажи ваших товаров в розницу без привлечения дополнительных исполнителей.</p>
+            </div>
+
+            <div class="card">
+                <img class="card-icon" src="images/service_icons/bitrix24_injection.svg" alt="Design">
+                <h3 class="card-title">Внедрение Битрикс24</h3>
+                <p class="card-text">Внедрение Битрикс24 и Корпоративных порталов для оптимизации бизнес-процессов компании.</p>
+            </div>
+            <div class="card">
+                <img class="card-icon" src="images/service_icons/support.svg" alt="Design">
+                <h3 class="card-title">Техподдержка сайта</h3>
+                <p class="card-text">Доработка типовых решений для Битрикс, разработка функционала под задачи бизнеса, сопровождение проектов.</p>
+            </div>
+            <div class="card">
+                <img class="card-icon" src="images/service_icons/1C_servicing.svg" alt="Design">
+                <h3 class="card-title">Обслуживание 1С</h3>
+                <p class="card-text">Интеграция 1С со сторонними системами, доработка типовых модулей обмена, разработка АРI.</p>
+            </div>
+            <div class="card">
+                <img class="card-icon" src="images/service_icons/1C_integration.svg" alt="Design">
+                <h3 class="card-title">1C-интеграция</h3>
+                <p class="card-text">Интеграция eCommerce проекта с учетными системами и внешними сервисами.</p>
+            </div>
+            <div class="card">
+                <img class="card-icon" src="images/service_icons/modile_development.svg" alt="Design">
+                <h3 class="card-title">Мобильная разработка
+                </h3>
+                <p class="card-text">Создание iOS и Android приложений для интернет-магазинов и B2B-платформ на Битрикс.</p>
+            </div>
+            <div class="card">
+                <img class="card-icon" src="images/service_icons/design_icon.svg" alt="Design">
+                <h3 class="card-title">Дизайн</h3>
+                <p class="card-text">Бренд-дизайн, брендбук, UI/UX, пользовательские интерфейсы, графика и прочее.</p>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
