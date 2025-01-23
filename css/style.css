@@ -1,3 +1,7 @@
+@import url('header.css');
+@import url('banner.css');
+@import url('service.css');
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #FCFCFC;
@@ -13,6 +17,6 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1480px;
+    max-width: 80vw;
     margin: auto;
 }

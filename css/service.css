@@ -1,8 +1,8 @@
-.service_container {
+.service {
     padding: 80px 0;
 }
 
-.service-title {
+.service__title {
     font-weight: 800;
     font-size: 50px;
     color: #2D3448;
@@ -16,10 +16,9 @@
     row-gap: 20px;
 }
 
-.card {
+.service__card {
     display: flex;
     flex-direction: column;
-    width: 473px;
     min-height: 214px;
     padding: 20px 24px;
     gap: 16px;
@@ -32,17 +31,18 @@
     box-shadow: 0 4px 20px #00000007;
 }
 
-.card-icon {
+.card__image {
     width: 60px;
     height: 60px;
 }
 
-.card-title {
+.card__title {
     font-size: 20px;
     font-weight: 600;
 }
 
-.card-text {
+.card__text {
+    width: 425px;
     font-size: 16px;
     font-weight: 500;
     color: #6b6b6b;
