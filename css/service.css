@@ -1,11 +1,12 @@
 .service {
     display: flex;
     flex-direction: column;
-    padding: 80px 0;
     gap: 32px;
+    padding: 80px 0;
 }
 
 .service__title {
+    width: fit-content;
     font-weight: 800;
     font-size: 50px;
     color: #2D3448;
@@ -16,6 +17,7 @@
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 20px;
+    justify-content: center;
 }
 
 .service__card {
@@ -57,5 +59,19 @@
 
     .card__text {
         width: 372px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .service {
+        padding: 50px 0;
+    }
+
+    .card__title {
+        width: 250px;
+    }
+
+    .card__text {
+        width: 250px;
     }
 }

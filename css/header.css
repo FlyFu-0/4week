@@ -100,6 +100,11 @@
 }
 
 @media (max-width: 1024px) {
+    .header__nav-right {
+        gap: 48px;
+    }
+
+
     .button-leave-request {
         display: none;
     }

@@ -44,7 +44,7 @@
     padding-left: 20px;
 }
 
-.banner__list--1440 {
+.banner__list--small-screen {
     display: none;
 }
 
@@ -114,7 +114,7 @@
         display: none;
     }
 
-    .banner__list--1440 {
+    .banner__list--small-screen {
         display: block;
         width: 630px;
         padding: 0;
@@ -129,5 +129,17 @@
 @media (max-width: 1024px) {
     .slider-arrow {
         display: none;
+    }
+
+    .banner__title--small-screen {
+        font-size: 48px;
+    }
+
+    .banner__title--small-screen > span {
+        font-size: 40px;
+    }
+
+    .banner__list--small-screen {
+        width: 470px;
     }
 }
