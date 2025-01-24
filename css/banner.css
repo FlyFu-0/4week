@@ -148,4 +148,40 @@
         padding: 90px 0 0 20px;
         background: url("/images/banner_max-768.png") no-repeat center / cover;
     }
+
+    .banner__title--small-screen {
+        font-size: 40px;
+    }
+
+    .banner__title--small-screen > span {
+        font-size: 32px;
+    }
+
+    .banner__list--small-screen {
+        width: 288px;
+    }
+}
+
+@media (max-width: 320px) {
+    .banner {
+        padding: 20px 0 0 16px;
+        background: url("/images/banner_max-320.png") no-repeat center / cover;
+    }
+
+    .banner__text {
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    .banner__title--small-screen {
+        font-size: 32px;
+    }
+
+    .banner__title--small-screen > span {
+        font-size: 24px;
+    }
+
+    .banner__list--small-screen {
+        width: 100%;
+    }
 }
