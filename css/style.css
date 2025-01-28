@@ -20,3 +20,9 @@ body {
     max-width: 85vw;
     margin: auto;
 }
+
+@media (max-widtH: 1440px) {
+    .container {
+        max-width: 90vw;
+    }
+}
