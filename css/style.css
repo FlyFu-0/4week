@@ -1,0 +1,28 @@
+@import url('header.css');
+@import url('banner.css');
+@import url('service.css');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FCFCFC;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 85vw;
+    margin: auto;
+}
+
+@media (max-widtH: 1440px) {
+    .container {
+        max-width: 90vw;
+    }
+}
