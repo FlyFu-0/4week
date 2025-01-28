@@ -1,10 +1,10 @@
 .banner {
+    position: relative;
     display: flex;
     flex-direction: column;
-    position: relative;
-    background: url("/images/banner_max-1920.png") no-repeat center / cover;
-    height: calc(100vh - 90px);
     justify-content: space-between;
+    background: url("../images/banner_max-1920.png") no-repeat center / cover;
+    height: calc(100vh - 90px);
 }
 
 .banner__inner {
@@ -71,14 +71,17 @@
 .arrow-top-right {
     width: 24px;
     height: 24px;
-    background: url("/images/banner_sprite.png") no-repeat -124px -19px;
+    background: url("../images/banner_sprite.png") no-repeat -124px -19px;
 }
 
 .slider {
+    position: absolute;
     display: flex;
-    margin: auto auto 24px;
-    gap: 20px;
     align-items: center;
+    gap: 20px;
+    left: 50%;
+    bottom: 24px;
+    transform: translate(-50%, 0);
 }
 
 .slider__slide {
@@ -92,35 +95,37 @@
     background-color: #00AEEF;
 }
 
-.slider-arrow {
+/* .slider-arrow {
     display: flex;
-    width: 100%;
-    padding: 25px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
     justify-content: space-between;
-    cursor: pointer;
-}
+    transform: translate(0, -50%);
+} */
 
 .left-slider-arrow {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translate(0, -50%);
     width: 62px;
     height: 62px;
-    background: url("/images/banner_sprite.png") no-repeat;
+    background: url("../images/banner_sprite.png") no-repeat;
     cursor: pointer;
 }
 
 .right-slider-arrow {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translate(0, -50%);
     width: 62px;
     height: 62px;
-    background: url("/images/banner_sprite.png") no-repeat -62px;
+    background: url("../images/banner_sprite.png") no-repeat -62px;
     cursor: pointer;
 }
 
 @media (max-width: 1440px) {
     .banner {
-        background: url("/images/banner_max-1440.png") no-repeat center / cover;
+        background: url("../images/banner_max-1440.png") no-repeat center / cover;
     }
 
     .banner__inner {
@@ -150,12 +155,21 @@
         padding: 0;
     }
 
-    .slider-arrow {
-        padding: 0;
+    .left-slider-arrow {
+        left: 0;
+    }
+
+    .right-slider-arrow {
+        right: 0;
     }
 }
 
 @media (max-width: 1024px) {
+    .banner {
+        height: calc(100vh - 70px);
+        background: url("../images/banner_max-768.png") no-repeat center / cover;
+    }
+
     .slider-arrow {
         display: none;
     }
@@ -180,8 +194,8 @@
 
 @media (max-width: 768px) {
     .banner {
-        height: calc(100vh - 70px);
-        background: url("/images/banner_max-768.png") no-repeat center / cover;
+        height: calc(100vh - 60px);
+        background: url("../images/banner_max-768.png") no-repeat center / cover;
     }
 
     .banner__inner {
@@ -206,7 +220,7 @@
 @media (max-width: 320px) {
     .banner {
         height: calc(100vh - 60px);
-        background: url("/images/banner_max-320.png") no-repeat center / cover;
+        background: url("../images/banner_max-320.png") no-repeat center / cover;
     }
 
     .banner__inner {
