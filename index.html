@@ -18,47 +18,46 @@
     <header class="header">
       <nav class="container header__nav">
         <div class="header__nav-left">
-          <img
-            class="hamburger"
-            src="images/burger_menu.svg"
-            alt="Burger Menu"
-          />
-          <img class="logo" src="images/logo.svg" alt="sotbit logo" />
+          <div class="hamburger"></div>
+          <div class="logo"></div>
           <div class="country-selector">
             <p class="country-selector__title">Россия</p>
-            <img src="images/russia.svg" alt="russia" />
-            <img src="images/arrows/arrow_down.svg" alt="arrow_down" />
+            <div class="country-flag"></div>
+            <div class="arrow_down"></div>
           </div>
         </div>
         <div class="header__nav-right">
           <div class="contacts">
             <div class="contacts__phone">
               <address class="contacts__number">+7 (495) 278-08-54</address>
-              <img src="images/arrows/arrow_down.svg" alt="arrow_down" />
+              <div class="arrow_down"></div>
             </div>
             <a href="#" class="contacts__callback">Заказать обратный звонок</a>
           </div>
           <a href="#" class="button-leave-request">Оставить заявку</a>
           <div class="header__icons">
-            <img src="images/icons/search.svg" alt="Search" />
-            <img src="images/icons/Support.svg" alt="Support" />
-            <img src="images/icons/Basket.svg" alt="Basket" />
-            <span class="basket-badge">0</span>
-            <img src="images/icons/User.svg" alt="User" />
+            <div class="search-icon"></div>
+            <div class="support-icon"></div>
+            <div class="basket-icon">
+              <span class="basket-badge">10</span>
+            </div>
+            <div class="user-icon"></div>
           </div>
         </div>
+      </nav>
 
-        <div class="header__nav-right header__nav-right--320">
-          <div class="header__icons">
-            <img src="images/icons/search.svg" alt="Search" />
-            <img src="images/icons/User.svg" alt="User" />
-          </div>
+      <nav class="header__nav header__nav--320">
+        <div class="hamburger"></div>
+        <div class="logo"></div>
+        <div class="header__icons">
+          <div class="search-icon"></div>
+          <div class="user-icon"></div>
         </div>
       </nav>
     </header>
 
     <article class="banner">
-      <div>
+      <div class="banner__inner">
         <div class="banner__text">
           <h2 class="banner__title banner__title--1920">
             <span>Разработка и внедрение</span><br />B2B платформы на Битрикс
@@ -80,7 +79,7 @@
         </div>
         <button class="banner__button">
           Подробнее
-          <img src="images/arrows/arrow_right-top.png" alt="Arrow Right Top" />
+          <div class="arrow-top-right"></div>
         </button>
       </div>
       <div class="slider">
@@ -89,14 +88,17 @@
         <div class="slider__slide"></div>
         <div class="slider__slide"></div>
         <div class="slider-arrow">
-          <img src="images/arrows/arrow_left_grey.svg" alt="Arrow Left" />
-          <img src="images/arrows/arrow_right_grey.svg" alt="Arrow Right" />
+          <div class="left-slider-arrow"></div>
+          <div class="right-slider-arrow"></div>
         </div>
       </div>
     </article>
 
     <section class="container service">
-      <h2 class="service__title">Наши услуги</h2>
+      <header>
+        <h2 class="service__title">Наши услуги</h2>
+      </header>
+
       <div class="card-container">
         <article class="card">
           <div class="card__images">
@@ -107,13 +109,7 @@
               src="images/service_icons/personal_accounts.svg"
               alt="Design"
             />
-            <div class="card__more">
-              <img
-                width="10"
-                src="images/arrows/arrow_right-top.png"
-                alt="arrow"
-              />
-            </div>
+            <div class="card__more"></div>
           </div>
           <h3 class="card__title">Внедрение личных кабинетов</h3>
           <p class="card__text">
@@ -133,13 +129,7 @@
               src="images/service_icons/marketplace_development.svg"
               alt="Design"
             />
-            <div class="card__more">
-              <img
-                width="10"
-                src="images/arrows/arrow_right-top.png"
-                alt="arrow"
-              />
-            </div>
+            <div class="card__more"></div>
           </div>
           <h3 class="card__title">Разработка маркетплейсов</h3>
           <p class="card__text">
@@ -159,13 +149,7 @@
               src="images/service_icons/eShop_creation.svg"
               alt="eShop"
             />
-            <div class="card__more">
-              <img
-                width="10"
-                src="images/arrows/arrow_right-top.png"
-                alt="arrow"
-              />
-            </div>
+            <div class="card__more"></div>
           </div>
           <h3 class="card__title">Создание интернет-магазинов</h3>
           <p class="card__text">
@@ -184,13 +168,7 @@
               src="images/service_icons/bitrix24_injection.svg"
               alt="bitrix24"
             />
-            <div class="card__more">
-              <img
-                width="10"
-                src="images/arrows/arrow_right-top.png"
-                alt="arrow"
-              />
-            </div>
+            <div class="card__more"></div>
           </div>
           <h3 class="card__title">Внедрение Битрикс24</h3>
           <p class="card__text">
@@ -208,13 +186,7 @@
               src="images/service_icons/support.svg"
               alt="support"
             />
-            <div class="card__more">
-              <img
-                width="10"
-                src="images/arrows/arrow_right-top.png"
-                alt="arrow"
-              />
-            </div>
+            <div class="card__more"></div>
           </div>
           <h3 class="card__title">Техподдержка сайта</h3>
           <p class="card__text">
@@ -232,13 +204,7 @@
               src="images/service_icons/1C_servicing.svg"
               alt="1C"
             />
-            <div class="card__more">
-              <img
-                width="10"
-                src="images/arrows/arrow_right-top.png"
-                alt="arrow"
-              />
-            </div>
+            <div class="card__more"></div>
           </div>
           <h3 class="card__title">Обслуживание 1С</h3>
           <p class="card__text">
@@ -256,13 +222,7 @@
               src="images/service_icons/1C_integration.svg"
               alt="1С"
             />
-            <div class="card__more">
-              <img
-                width="10"
-                src="images/arrows/arrow_right-top.png"
-                alt="arrow"
-              />
-            </div>
+            <div class="card__more"></div>
           </div>
           <h3 class="card__title">1C-интеграция</h3>
           <p class="card__text">
@@ -280,13 +240,7 @@
               src="images/service_icons/mobile_development.svg"
               alt="mobile development"
             />
-            <div class="card__more">
-              <img
-                width="10"
-                src="images/arrows/arrow_right-top.png"
-                alt="arrow"
-              />
-            </div>
+            <div class="card__more"></div>
           </div>
           <h3 class="card__title">Мобильная разработка</h3>
           <p class="card__text">
@@ -304,13 +258,7 @@
               src="images/service_icons/design_icon.svg"
               alt="design"
             />
-            <div class="card__more">
-              <img
-                width="10"
-                src="images/arrows/arrow_right-top.png"
-                alt="arrow"
-              />
-            </div>
+            <div class="card__more"></div>
           </div>
           <h3 class="card__title">Дизайн</h3>
           <p class="card__text">
