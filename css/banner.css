@@ -74,14 +74,13 @@
     background: url("../images/banner_sprite.png") no-repeat -124px -19px;
 }
 
-.slider {
+.slider-indicator {
     position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 20px;
     left: 50%;
     bottom: 24px;
     transform: translate(-50%, 0);
+    display: flex;
+    gap: 20px;
 }
 
 .slider__slide {
@@ -94,12 +93,6 @@
 .slider__slide--active {
     background-color: #00AEEF;
 }
-
-/* .slider-arrow {
-    display: flex;
-    justify-content: space-between;
-    transform: translate(0, -50%);
-} */
 
 .left-slider-arrow {
     position: absolute;
@@ -119,13 +112,13 @@
     transform: translate(0, -50%);
     width: 62px;
     height: 62px;
-    background: url("../images/banner_sprite.png") no-repeat -62px;
+    background: url("../images/banner_sprite.png") no-repeat -62px 0;
     cursor: pointer;
 }
 
 @media (max-width: 1440px) {
     .banner {
-        background: url("../images/banner_max-1440.png") no-repeat center / cover;
+        background: url("../images/banner_max-1024.png") no-repeat center / cover;
     }
 
     .banner__inner {
@@ -135,6 +128,14 @@
     .banner__text {
         gap: 12px;
         margin-bottom: 28px;
+    }
+
+    .banner__title--small-screen {
+        font-size: 48px;
+    }
+
+    .banner__title--small-screen>span {
+        font-size: 40px;
     }
 
     .banner__title--1920 {
@@ -151,7 +152,7 @@
 
     .banner__info--small-screen {
         display: block;
-        width: 630px;
+        width: 420px;
         padding: 0;
     }
 
@@ -175,8 +176,9 @@
     }
 
     .banner__inner {
-        top: 278px;
-        left: 30px;
+        top: 90px;
+        left: 20px;
+        transform: translate(0, 0);
     }
 
     .banner__title--small-screen {
@@ -199,9 +201,12 @@
     }
 
     .banner__inner {
-        top: 90px;
-        left: 20px;
-        transform: translate(0, 0);
+        top: 20px;
+        left: 16px;
+    }
+
+    .banner__text {
+        gap: 8px;
     }
 
     .banner__title--small-screen {
@@ -213,23 +218,13 @@
     }
 
     .banner__info--small-screen {
-        width: auto;
+        width: 100%;
     }
 }
 
 @media (max-width: 320px) {
     .banner {
-        height: calc(100vh - 60px);
         background: url("../images/banner_max-320.png") no-repeat center / cover;
-    }
-
-    .banner__inner {
-        top: 20px;
-        left: 16px;
-    }
-
-    .banner__text {
-        gap: 8px;
     }
 
     .banner__title--small-screen {
@@ -241,6 +236,7 @@
     }
 
     .banner__info--small-screen {
+        font-size: 16px;
         width: 100%;
     }
 }

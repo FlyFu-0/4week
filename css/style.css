@@ -21,13 +21,13 @@ body {
     margin: auto;
 }
 
-@media (max-widtH: 1440px) {
+@media (max-width: 1440px) {
     .container {
         max-width: 90vw;
     }
 }
 
-@media (max-widtH: 1024px) {
+@media (max-width: 1024px) {
     .container {
         max-width: 95vw;
     }

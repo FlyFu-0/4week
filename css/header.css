@@ -216,10 +216,6 @@
         display: none;
     }
 
-    .header__nav-right--320 {
-        display: block;
-    }
-
     .header__icons {
         gap: 10px;
     }
