@@ -1,4 +1,4 @@
-.banner {
+.slider-banner {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -7,14 +7,14 @@
     height: calc(100vh - 90px);
 }
 
-.banner__inner {
+.slider-banner__inner {
     position: absolute;
     top: 50%;
     left: 120px;
     transform: translate(0, -50%);
 }
 
-.banner__text {
+.slider-banner__text {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -23,37 +23,37 @@
     font-weight: 500;
 }
 
-.banner__title {
+.slider-banner__title {
     font-size: 52px;
 }
 
-.banner__title>span {
+.slider-banner__title>span {
     font-size: 60px;
     font-weight: 800;
 }
 
-.banner__title--small-screen {
+.slider-banner__title--small-screen {
     display: none;
     font-size: 64px;
     font-weight: 800;
 }
 
-.banner__title--small-screen>span {
+.slider-banner__title--small-screen>span {
     font-size: 52px;
     color: #2D344830;
 }
 
-.banner__info {
+.slider-banner__info {
     font-size: 18px;
     font-weight: 500;
     padding-left: 20px;
 }
 
-.banner__info--small-screen {
+.slider-banner__info--small-screen {
     display: none;
 }
 
-.banner__button {
+.slider-banner__button {
     width: fit-content;
     display: flex;
     align-items: center;
@@ -117,40 +117,37 @@
 }
 
 @media (max-width: 1440px) {
-    .banner {
+    .slider-banner {
         background: url("../images/banner_max-1024.png") no-repeat center / cover;
     }
 
-    .banner__inner {
+    .slider-banner__inner {
         left: 60px;
     }
 
-    .banner__text {
+    .slider-banner__text {
         gap: 12px;
         margin-bottom: 28px;
     }
 
-    .banner__title--small-screen {
+    .slider-banner__title--small-screen {
+        display: block;
         font-size: 48px;
     }
 
-    .banner__title--small-screen>span {
+    .slider-banner__title--small-screen>span {
         font-size: 40px;
     }
 
-    .banner__title--1920 {
+    .slider-banner__title--1920 {
         display: none;
     }
 
-    .banner__title--small-screen {
-        display: block;
-    }
-
-    .banner__info {
+    .slider-banner__info {
         display: none;
     }
 
-    .banner__info--small-screen {
+    .slider-banner__info--small-screen {
         display: block;
         width: 420px;
         padding: 0;
@@ -166,7 +163,7 @@
 }
 
 @media (max-width: 1024px) {
-    .banner {
+    .slider-banner {
         height: calc(100vh - 70px);
         background: url("../images/banner_max-768.png") no-repeat center / cover;
     }
@@ -175,67 +172,59 @@
         display: none;
     }
 
-    .banner__inner {
+    .slider-banner__inner {
         top: 90px;
         left: 20px;
         transform: translate(0, 0);
     }
 
-    .banner__title--small-screen {
-        font-size: 48px;
-    }
-
-    .banner__title--small-screen>span {
-        font-size: 40px;
-    }
-
-    .banner__info--small-screen {
+    .slider-banner__info--small-screen {
         width: 420px;
     }
 }
 
 @media (max-width: 768px) {
-    .banner {
+    .slider-banner {
         height: calc(100vh - 60px);
         background: url("../images/banner_max-768.png") no-repeat center / cover;
     }
 
-    .banner__inner {
+    .slider-banner__inner {
         top: 20px;
         left: 16px;
     }
 
-    .banner__text {
+    .slider-banner__text {
         gap: 8px;
     }
 
-    .banner__title--small-screen {
+    .slider-banner__title--small-screen {
         font-size: 40px;
     }
 
-    .banner__title--small-screen>span {
+    .slider-banner__title--small-screen>span {
         font-size: 32px;
     }
 
-    .banner__info--small-screen {
+    .slider-banner__info--small-screen {
         width: 100%;
     }
 }
 
 @media (max-width: 320px) {
-    .banner {
+    .slider-banner {
         background: url("../images/banner_max-320.png") no-repeat center / cover;
     }
 
-    .banner__title--small-screen {
+    .slider-banner__title--small-screen {
         font-size: 32px;
     }
 
-    .banner__title--small-screen>span {
+    .slider-banner__title--small-screen>span {
         font-size: 24px;
     }
 
-    .banner__info--small-screen {
+    .slider-banner__info--small-screen {
         font-size: 16px;
         width: 100%;
     }
