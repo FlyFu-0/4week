@@ -48,9 +48,12 @@
     background: url("../images/header_sprite.png") no-repeat -175px 0;
 }
 
-.arrow_down--grey {
+.arrow_down {
     width: 20px;
     height: 20px;
+}
+
+.arrow_down--grey {
     background: url("../images/header_sprite.png") no-repeat -207px 0;
 }
 
@@ -95,7 +98,6 @@
 }
 
 .button-leave-request {
-    margin-left: 72px;
     padding: 15px 30px;
     background-color: #00B8FF;
     text-decoration: none;
@@ -105,10 +107,13 @@
     border-radius: 4px;
 }
 
+.header__button-leave-request {
+    margin: 0 48px 0 72px;
+}
+
 .header__icons {
     display: flex;
     height: 32px;
-    margin-left: 48px;
     gap: 40px;
 }
 

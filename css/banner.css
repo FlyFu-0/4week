@@ -94,26 +94,25 @@
     background-color: #00AEEF;
 }
 
-.left-slider-arrow {
-    position: absolute;
+.slider-arrow {
     top: 50%;
-    left: 25px;
-    transform: translate(0, -50%);
     width: 62px;
     height: 62px;
-    background: url("../images/banner_sprite.png") no-repeat;
     cursor: pointer;
 }
 
-.right-slider-arrow {
+.slider-arrow--left {
     position: absolute;
-    top: 50%;
+    left: 25px;
+    transform: translate(0, -50%);
+    background: url("../images/banner_sprite.png") no-repeat;
+}
+
+.slider-arrow--right {
+    position: absolute;
     right: 25px;
     transform: translate(0, -50%);
-    width: 62px;
-    height: 62px;
     background: url("../images/banner_sprite.png") no-repeat -62px 0;
-    cursor: pointer;
 }
 
 @media (max-width: 1440px) {
