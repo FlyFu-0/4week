@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     display: flex;
     height: 90px;
     align-items: center;
@@ -21,14 +22,14 @@
 .hamburger {
     width: 32px;
     height: 32px;
-    background: url("/images/header_sprite.png") no-repeat;
+    background: url("../images/header_sprite.png") no-repeat;
     cursor: pointer;
 }
 
 .logo {
     width: 143px;
     height: 32px;
-    background: url("/images/header_sprite.png") no-repeat -32px 0;
+    background: url("../images/header_sprite.png") no-repeat -32px 0;
     cursor: pointer;
 }
 
@@ -44,13 +45,16 @@
 .country-flag {
     width: 32px;
     height: 32px;
-    background: url("/images/header_sprite.png") no-repeat -175px 0;
+    background: url("../images/header_sprite.png") no-repeat -175px 0;
 }
 
 .arrow_down {
     width: 20px;
     height: 20px;
-    background: url("/images/header_sprite.png") no-repeat -207px 0;
+}
+
+.arrow_down--grey {
+    background: url("../images/header_sprite.png") no-repeat -207px 0;
 }
 
 .header__nav--right {
@@ -94,7 +98,6 @@
 }
 
 .button-leave-request {
-    margin-left: 72px;
     padding: 15px 30px;
     background-color: #00B8FF;
     text-decoration: none;
@@ -104,25 +107,27 @@
     border-radius: 4px;
 }
 
+.header__button-leave-request {
+    margin: 0 48px 0 72px;
+}
+
 .header__icons {
     display: flex;
     height: 32px;
-    margin-left: 48px;
     gap: 40px;
-    cursor: pointer;
 }
 
 .search-icon {
     width: 32px;
     height: 32px;
-    background: url("/images/header_sprite.png") no-repeat -227px 0;
+    background: url("../images/header_sprite.png") no-repeat -227px 0;
     cursor: pointer;
 }
 
 .support-icon {
     width: 32px;
     height: 32px;
-    background: url("/images/header_sprite.png") no-repeat -259px 0;
+    background: url("../images/header_sprite.png") no-repeat -259px 0;
     cursor: pointer;
 }
 
@@ -130,14 +135,14 @@
     position: relative;
     width: 32px;
     height: 32px;
-    background: url("/images/header_sprite.png") no-repeat -291px 0;
+    background: url("../images/header_sprite.png") no-repeat -291px 0;
     cursor: pointer;
 }
 
 .user-icon {
     width: 32px;
     height: 32px;
-    background: url("/images/header_sprite.png") no-repeat -323px 0;
+    background: url("../images/header_sprite.png") no-repeat -323px 0;
     cursor: pointer;
 }
 
@@ -157,7 +162,7 @@
     border-radius: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
     .header__nav-right {
         gap: 48px;
     }
@@ -168,7 +173,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .header {
         height: 70px;
     }
@@ -176,7 +181,7 @@
     .logo {
         width: 92px;
         height: 19px;
-        background: url("/images/header_sprite.png") no-repeat -355px 0;
+        background: url("../images/header_sprite.png") no-repeat -355px 0;
     }
 
     .contacts {
@@ -184,19 +189,23 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
     .header {
         height: 60px;
     }
 
-    .header__nav {
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .support-icon {
         display: none;
     }
 
-    .header__nav--320 {
-        display: flex;
-        margin: auto;
-        gap: 48px;
+    .basket-icon {
+        display: none;
     }
 
     .header__icons {
@@ -209,10 +218,6 @@
 
     .header__nav-right {
         display: none;
-    }
-
-    .header__nav-right--320 {
-        display: block;
     }
 
     .header__icons {

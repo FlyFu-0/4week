@@ -1,6 +1,6 @@
-@import url('header.css');
-@import url('banner.css');
-@import url('service.css');
+@import url('./header.css');
+@import url('./banner.css');
+@import url('./service.css');
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -21,8 +21,14 @@ body {
     margin: auto;
 }
 
-@media (max-widtH: 1440px) {
+@media (max-width: 1440px) {
     .container {
         max-width: 90vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 95vw;
     }
 }

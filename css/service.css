@@ -12,14 +12,14 @@
     color: #2D3448;
 }
 
-.card-container {
+.service__card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px 20px;
     justify-content: start;
 }
 
-.card {
+.service-card {
     display: flex;
     flex-direction: column;
     min-height: 214px;
@@ -30,25 +30,20 @@
     transition: all .2s linear;
 }
 
-.card:hover {
+.service-card:hover {
     box-shadow: 0 4px 20px #00000007;
 }
 
-.card__images {
+.service-card__images {
     display: flex;
     justify-content: space-between;
 }
 
-.card__image {
-    width: 60px;
-    height: 60px;
-}
-
-.card__more {
+.service-card__more {
     display: none;
     align-items: center;
     justify-content: center;
-    background: url("/images/card_more_right_top_arrow.png") no-repeat center / 10px;
+    background: url("../images/card_more_right_top_arrow.png") no-repeat center / 10px;
     width: 56px;
     height: 30px;
     border: 2px solid #00B8FF;
@@ -56,30 +51,30 @@
     cursor: pointer;
 }
 
-.card__title {
+.service-card__title {
     font-size: 20px;
     font-weight: 600;
 }
 
-.card__text {
+.service-card__text {
     font-size: 16px;
     font-weight: 500;
     color: #6b6b6b;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1919px) {
     .service {
         padding: 60px 0;
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
     .service {
         padding: 50px 0;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .service {
         padding: 40px 0;
     }
@@ -88,38 +83,38 @@
         font-size: 40px;
     }
 
-    .card-container {
+    .service__card-container {
         grid-template-columns: 1fr 1fr;
         gap: 20px;
         justify-content: start;
     }
 
-    .card {
+    .service-card {
         flex: 1 0 45%;
         padding: 20px;
         gap: 12px;
         box-shadow: 0 4px 20px #00000007;
     }
 
-    .card:last-child {
+    .service-card:last-child {
         flex: 0 0 49%;
     }
 
-    .card__image {
+    .service-card__image {
         width: 56px;
         height: 56px;
     }
 
-    .card__more {
+    .service-card__more {
         display: flex;
     }
 
-    .card__title {
+    .service-card__title {
         font-size: 18px;
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
     .service {
         padding: 32px 0;
     }
@@ -128,33 +123,33 @@
         font-size: 24px;
     }
 
-    .card-container {
+    .service__card-container {
         grid-template-columns: 1fr;
     }
 
-    .card {
+    .service-card {
         padding: 16px;
         gap: 8px;
     }
 
-    .card:last-child {
+    .service-card:last-child {
         flex: 1 0 0;
     }
 
-    .card__image {
+    .service-card__image {
         width: 40px;
         height: 40px;
     }
 
-    .card__more {
+    .service-card__more {
         display: flex;
     }
 
-    .card__title {
+    .service-card__title {
         font-size: 16px;
     }
 
-    .card__text {
+    .service-card__text {
         font-size: 14px;
     }
 }
